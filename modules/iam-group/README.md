@@ -1,15 +1,17 @@
-# Managing a IAM Groups (terraform-aws-iam-groups)
+# Managing a IAM Group (iam-group)
 
 [toc]
 
 ## 1. Module Usage
 
 >```bash
-> module "iam_groups" {
->     source    = "anthunt/iam-groups/aws"
->     version   = "0.0.1"
->     aws       = var.aws
->     groups     = var.groups
+> module "iam_group" {
+>     source    = "anthunt/iam-groups/iam-group/aws"> 
+>     for_each  = var.groups
+>     group     = merge(each.value, {"name" = each.key})
+>     providers = {
+>         aws = aws
+>     }
 > }
 > ```
 
