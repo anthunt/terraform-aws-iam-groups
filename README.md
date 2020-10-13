@@ -4,7 +4,7 @@
 
 ## 1. Module Usage
 
->```bash
+>```terraform
 > module "iam_groups" {
 >     source    = "anthunt/iam-groups/aws"
 >     version   = "0.0.1"
@@ -15,7 +15,7 @@
 
 ## 2. variables.tf Sample
 
->```bash
+>```terraform
 > variable "aws" {
 >     type = object({
 >         region  = string
@@ -34,7 +34,7 @@
 
 ## 3. tfvars Sample
 
->```json
+>```terraform
 > aws = {
 >     "region" = "AWS Region ID"
 >     "profile" = "AWS CLI Profile Name from ~/.aws/credentials or config"
