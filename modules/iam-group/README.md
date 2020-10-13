@@ -6,7 +6,7 @@
 
 >```terraform
 > module "iam_group" {
->     source    = "anthunt/iam-groups/iam-group/aws"> 
+>     source    = "anthunt/iam-groups/aws//modules/iam-group"> 
 >     for_each  = var.groups
 >     group     = merge(each.value, {"name" = each.key})
 >     providers = {
