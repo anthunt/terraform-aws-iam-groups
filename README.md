@@ -6,7 +6,7 @@
 
 >```terraform
 > module "iam_groups" {
->     source    = "anthunt/iam-groups/aws"
+>     source    = "anthunt/iam-groups/aws//modules/iam-group"
 >     version   = "0.0.1"
 >     aws       = var.aws
 >     groups     = var.groups
