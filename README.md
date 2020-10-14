@@ -1,5 +1,7 @@
 # Managing a IAM Groups (terraform-aws-iam-groups)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1d56ca6b7f648c9ab71b6940774a7b1)](https://app.codacy.com/gh/anthunt/terraform-aws-iam-groups?utm_source=github.com&utm_medium=referral&utm_content=anthunt/terraform-aws-iam-groups&utm_campaign=Badge_Grade)
+
 [toc]
 
 ## 1. Module Usage
