@@ -1,6 +1,7 @@
 # Managing a IAM Groups (terraform-aws-iam-groups)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1d56ca6b7f648c9ab71b6940774a7b1)](https://app.codacy.com/gh/anthunt/terraform-aws-iam-groups?utm_source=github.com&utm_medium=referral&utm_content=anthunt/terraform-aws-iam-groups&utm_campaign=Badge_Grade)
+[![Terraform](https://img.shields.io/badge/Terraform-Registry:lastest-blue.svg)](https://registry.terraform.io/modules/anthunt/iam-groups/aws)
 
 [toc]
 
@@ -8,7 +9,7 @@
 
 >```terraform
 > module "iam_groups" {
->     source    = "anthunt/iam-groups/aws//modules/iam-group"
+>     source    = "anthunt/iam-groups/aws"
 >     version   = "0.0.1"
 >     aws       = var.aws
 >     groups     = var.groups
